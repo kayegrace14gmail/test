@@ -14,10 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('accounts', function (Blueprint $table) {
-            $table->id('accountNumber');
-            $table->string('owner');
-            $table->float('balance');
-            $table->timestamps();
+			$table->id();
+			$table->timestamps();
         });
     }
 
